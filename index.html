@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Essenza</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">Essenza</a>
+            <button class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="sobre nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="reseñas.html">Reseñas</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Principal -->
+    <header class="banner">
+        <h1>Essenza</h1>
+        <p>La esencia de lo inolvidable</p>
+        <img src="imagenes/ESSENZA LOGO.jpg" alt="Essenza Logo">
+        <div class="cta-buttons">
+            <a href="productos.html" class="btn-primary">Ver Productos</a>
+            <a href="contacto.html" class="btn-secondary">Contáctanos</a>
+        </div>
+    </header>
+
+    <!-- Sección ¿Por qué Essenza? -->
+    <section class="why-essenza">
+        <h2>¿Por Qué Elegir Essenza?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="icon">✨</div>
+                <h3>Fragancias Premium</h3>
+                <p>Perfumes de alta calidad que duran todo el día</p>
+            </div>
+            <div class="benefit-item">
+                <div class="icon">💰</div>
+                <h3>Precios Accesibles</h3>
+                <p>Elegancia y calidad al alcance de todos</p>
+            </div>
+            <div class="benefit-item">
+                <div class="icon">🎯</div>
+                <h3>Variedad de Aromas</h3>
+                <p>Encuentra el perfume perfecto para ti</p>
+            </div>
+            <div class="benefit-item">
+                <div class="icon">⏱️</div>
+                <h3>Larga Duración</h3>
+                <p>Fragancias que permanecen en tu piel y ropa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías Destacadas -->
+    <section class="featured-categories">
+        <h2>Nuestras Categorías</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-icon">👨</div>
+                <h3>Para Hombres</h3>
+                <p>Fragancias masculinas con carácter</p>
+                <a href="productos.html" class="btn-link">Ver más</a>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">👩</div>
+                <h3>Para Mujeres</h3>
+                <p>Aromas elegantes y sofisticados</p>
+                <a href="productos.html" class="btn-link">Ver más</a>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">💑</div>
+                <h3>Unisex</h3>
+                <p>Fragancias versátiles para todos</p>
+                <a href="productos.html" class="btn-link">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="stats">
+        <div class="stat-item">
+            <h3>500+</h3>
+            <p>Clientes Satisfechos</p>
+        </div>
+        <div class="stat-item">
+            <h3>50+</h3>
+            <p>Fragancias Disponibles</p>
+        </div>
+        <div class="stat-item">
+            <h3>100%</h3>
+            <p>Calidad Garantizada</p>
+        </div>
+        <div class="stat-item">
+            <h3>4.9/5</h3>
+            <p>Calificación Promedio</p>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-section">
+        <h2>¿Listo para encontrar tu fragancia perfecta?</h2>
+        <p>Descubre nuestra colección completa</p>
+        <a href="productos.html" class="btn-primary">Explorar Productos</a>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h3>Essenza</h3>
+            <p>La esencia de lo inolvidable</p>
+            <div class="footer-info">
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: 3234902093</p>
+                <p><i class="fas fa-envelope"></i> Yecidperez313@gmail.com</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/573234902093" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Essenza. Todos los derechos reservados</p>
+            <p class="tutor">Tutor: Ingeniero Lewins Baena Rodriguez</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menú Hamburguesa
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
